@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <script>
+        if (!gform) {
+            document.addEventListener("gform_main_scripts_loaded", function() {
+                gform.scriptsLoaded = !0
+            }), window.addEventListener("DOMContentLoaded", function() {
+                gform.domLoaded = !0
+            });
+            var gform = {
+                domLoaded: !1,
+                scriptsLoaded: !1,
+                initializeOnLoaded: function(o) {
+                    gform.domLoaded && gform.scriptsLoaded ? o() : !gform.domLoaded && gform.scriptsLoaded ? window.addEventListener("DOMContentLoaded", o) : document.addEventListener("gform_main_scripts_loaded", o)
+                },
+                hooks: {
+                    action: {},
+                    filter: {}
+                },
+                addAction: function(o, n, r, t) {
+                    gform.addHook("action", o, n, r, t)
+                },
+                addFilter: function(o, n, r, t) {
+                    gform.addHook("filter", o, n, r, t)
+                },
+                doAction: function(o) {
+                    gform.doHook("action", o, arguments)
+                },
+                applyFilters: function(o) {
+                    return gform.doHook("filter", o, arguments)
+                },
+                removeAction: function(o, n) {
+                    gform.removeHook("action", o, n)
+                },
+                removeFilter: function(o, n, r) {
+                    gform.removeHook("filter", o, n, r)
+                },
+                addHook: function(o, n, r, t, i) {
+                    null == gform.hooks[o][n] && (gform.hooks[o][n] = []);
+                    var e = gform.hooks[o][n];
+                    null == i && (i = n + "_" + e.length), null == t && (t = 10), gform.hooks[o][n].push({
+                        tag: i,
+                        callable: r,
+                        priority: t
+                    })
+                },
+                doHook: function(o, n, r) {
+                    if (r = Array.prototype.slice.call(r, 1), null != gform.hooks[o][n]) {
+                        var t, i = gform.hooks[o][n];
+                        i.sort(function(o, n) {
+                            return o.priority - n.priority
+                        });
+                        for (var e = 0; e < i.length; e++) "function" != typeof(t = i[e].callable) && (t = window[t]), "action" == o ? t.apply(null, r) : r[0] = t.apply(null, r)
+                    }
+                    if ("filter" == o) return r[0]
+                },
+                removeHook: function(o, n, r, t) {
+                    if (null != gform.hooks[o][n])
+                        for (var i = gform.hooks[o][n], e = i.length - 1; 0 <= e; e--) null != t && t != i[e].tag || null != r && r != i[e].priority || i.splice(e, 1)
+                }
+            }
+        }
+    </script>
+
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <title>Stefanos Trattoria &#8211; Order Food Online &#8211; 32708</title>
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+    <link rel="alternate" type="application/rss+xml" title="Stefanos Trattoria &raquo; Feed" href="https://stefanos-trattoria.com/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Stefanos Trattoria &raquo; Comments Feed" href="https://stefanos-trattoria.com/comments/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Stefanos Trattoria &raquo; Homepage Comments Feed" href="https://stefanos-trattoria.com/sample-page/feed/" />
+    <link rel="preload" href="https://stefanos-trattoria.com/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.3/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://stefanos-trattoria.com/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.3/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://stefanos-trattoria.com/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.3/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <script>
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "https:\/\/stefanos-trattoria.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.1"
+            }
+        };
+        ! function(e, a, t) {
+            var n, r, o, i = a.createElement("canvas"),
+                p = i.getContext && i.getContext("2d");
+
+            function s(e, t) {
+                var a = String.fromCharCode;
+                p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0);
+                e = i.toDataURL();
+                return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL()
+            }
+
+            function c(e) {
+                var t = a.createElement("script");
+                t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
+            }
+            for (o = Array("flag", "emoji"), t.supports = {
+                    everything: !0,
+                    everythingExceptFlag: !0
+                }, r = 0; r < o.length; r++) t.supports[o[r]] = function(e) {
+                if (!p || !p.fillText) return !1;
+                switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
+                    case "flag":
+                        return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]);
+                    case "emoji":
+                        return !s([10084, 65039, 8205, 55357, 56613], [10084, 65039, 8203, 55357, 56613])
+                }
+                return !1
+            }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
+            t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function() {
+                t.DOMReady = !0
+            }, t.supports.everything || (n = function() {
+                t.readyCallback()
+            }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function() {
+                "complete" === a.readyState && t.readyCallback()
+            })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji)))
+        }(window, document, window._wpemojiSettings);
+    </script>
+    <style>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css' href='https://stefanos-trattoria.com/wp-includes/css/dist/block-library/style.min.css?ver=5.8.1' media='all' />
+    <style id='wp-block-library-theme-inline-css'>
+        #start-resizable-editor-section {
+            display: none
+        }
+        
+        .wp-block-audio figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+        
+        .is-dark-theme .wp-block-audio figcaption {
+            color: hsla(0, 0%, 100%, .65)
+        }
+        
+        .wp-block-code {
+            font-family: Menlo, Consolas, monaco, monospace;
+            color: #1e1e1e;
+            padding: .8em 1em;
+            border: 1px solid #ddd;
+            border-radius: 4px
+        }
+        
+        .wp-block-embed figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+        
+        .is-dark-theme .wp-block-embed figcaption {
+            color: hsla(0, 0%, 100%, .65)
+        }
+        
+        .blocks-gallery-caption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+        
+        .is-dark-theme .blocks-gallery-caption {
+            color: hsla(0, 0%, 100%, .65)
+        }
+        
+        .wp-block-image figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+        
+        .is-dark-theme .wp-block-image figcaption {
+            color: hsla(0, 0%, 100%, .65)
+        }
+        
+        .wp-block-pullquote {
+            border-top: 4px solid;
+            border-bottom: 4px solid;
+            margin-bottom: 1.75em;
+            color: currentColor
+        }
+        
+        .wp-block-pullquote__citation,
+        .wp-block-pullquote cite,
+        .wp-block-pullquote footer {
+            color: currentColor;
+            text-transform: uppercase;
+            font-size: .8125em;
+            font-style: normal
+        }
+        
+        .wp-block-quote {
+            border-left: .25em solid;
+            margin: 0 0 1.75em;
+            padding-left: 1em
+        }
+        
+        .wp-block-quote cite,
+        .wp-block-quote footer {
+            color: currentColor;
+            font-size: .8125em;
+            position: relative;
+            font-style: normal
+        }
+        
+        .wp-block-quote.has-text-align-right {
+            border-left: none;
+            border-right: .25em solid;
+            padding-left: 0;
+            padding-right: 1em
+        }
+        
+        .wp-block-quote.has-text-align-center {
+            border: none;
+            padding-left: 0
+        }
+        
+        .wp-block-quote.is-large,
+        .wp-block-quote.is-style-large {
+            border: none
+        }
+        
+        .wp-block-search .wp-block-search__label {
+            font-weight: 700
+        }
+        
+        .wp-block-group.has-background {
+            padding: 1.25em 2.375em;
+            margin-top: 0;
+            margin-bottom: 0
+        }
+        
+        .wp-block-separator {
+            border: none;
+            border-bottom: 2px solid;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: .4
+        }
+        
+        .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+            width: 100px
+        }
+        
+        .wp-block-separator.has-background:not(.is-style-dots) {
+            border-bottom: none;
+            height: 1px
+        }
+        
+        .wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+            height: 2px
+        }
+        
+        .wp-block-table thead {
+            border-bottom: 3px solid
+        }
+        
+        .wp-block-table tfoot {
+            border-top: 3px solid
+        }
+        
+        .wp-block-table td,
+        .wp-block-table th {
+            padding: .5em;
+            border: 1px solid;
+            word-break: normal
+        }
+        
+        .wp-block-table figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+        
+        .is-dark-theme .wp-block-table figcaption {
+            color: hsla(0, 0%, 100%, .65)
+        }
+        
+        .wp-block-video figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+        
+        .is-dark-theme .wp-block-video figcaption {
+            color: hsla(0, 0%, 100%, .65)
+        }
+        
+        .wp-block-template-part.has-background {
+            padding: 1.25em 2.375em;
+            margin-top: 0;
+            margin-bottom: 0
+        }
+        
+        #end-resizable-editor-section {
+            display: none
+        }
+    </style>
+    <link rel='stylesheet' id='font-awesome-5-css' href='https://stefanos-trattoria.com/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.3/css/all.min.css?ver=2.5.0.1' media='all' />
+    <link rel='stylesheet' id='font-awesome-css' href='https://stefanos-trattoria.com/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.3/css/v4-shims.min.css?ver=2.5.0.1' media='all' />
+    <link rel='stylesheet' id='jquery-magnificpopup-css' href='https://stefanos-trattoria.com/wp-content/plugins/bb-plugin/css/jquery.magnificpopup.min.css?ver=2.5.0.1' media='all' />
+    <link rel='stylesheet' id='fl-builder-layout-2-css' href='https://stefanos-trattoria.com/wp-content/uploads/bb-plugin/cache/2-layout.css?ver=98505fb6793ab9a82c57cc9d94e75124' media='all' />
+    <link rel='stylesheet' id='fl-builder-layout-bundle-789de6af30ad6c6b0b72a06cf8b3a0c3-css' href='https://stefanos-trattoria.com/wp-content/uploads/bb-plugin/cache/789de6af30ad6c6b0b72a06cf8b3a0c3-layout-bundle.css?ver=2.5.0.1-1.3.3.1' media='all' />
+    <link rel='stylesheet' id='bootstrap-4-css' href='https://stefanos-trattoria.com/wp-content/themes/bb-theme/css/bootstrap-4.min.css?ver=1.7.9' media='all' />
+    <link rel='stylesheet' id='fl-automator-skin-css' href='https://stefanos-trattoria.com/wp-content/uploads/bb-theme/skin-615bd8e30567e.css?ver=1.7.9' media='all' />
+    <link rel='stylesheet' id='fl-child-theme-css' href='https://stefanos-trattoria.com/wp-content/themes/bb-theme-child/style.css?ver=5.8.1' media='all' />
+    <link rel='stylesheet' id='animate-css' href='https://stefanos-trattoria.com/wp-content/plugins/bbpowerpack/assets/css/animate.min.css?ver=3.5.1' media='all' />
+    <link rel='stylesheet' id='fl-builder-google-fonts-46ee78a779b6fcea765e72772cbaa6a6-css' href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C700%7COpen+Sans%3A300%2C400&#038;ver=5.8.1' media='all' />
+    <script id='jquery-core-js-extra'>
+        var uabb = {
+            "ajax_url": "https:\/\/stefanos-trattoria.com\/wp-admin\/admin-ajax.php"
+        };
+    </script>
+    <script src='https://stefanos-trattoria.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+    <script src='https://stefanos-trattoria.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+    <script src='https://stefanos-trattoria.com/wp-includes/js/imagesloaded.min.js?ver=5.8.1' id='imagesloaded-js'></script>
+    <link rel="https://api.w.org/" href="https://stefanos-trattoria.com/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://stefanos-trattoria.com/wp-json/wp/v2/pages/2" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://stefanos-trattoria.com/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://stefanos-trattoria.com/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 5.8.1" />
+    <link rel="canonical" href="https://stefanos-trattoria.com/" />
+    <link rel='shortlink' href='https://stefanos-trattoria.com/' />
+    <link rel="alternate" type="application/json+oembed" href="https://stefanos-trattoria.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstefanos-trattoria.com%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://stefanos-trattoria.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstefanos-trattoria.com%2F&#038;format=xml" />
+    <style>
+        form[class*="fl-builder-pp-"] .fl-lightbox-header h1:before {
+            content: "PowerPack ";
+            position: relative;
+            display: inline-block;
+            margin-right: 5px;
+        }
+    </style>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MP5G85V');
+    </script>
+    <!-- End Google Tag Manager -->
+    <link rel="pingback" href="https://stefanos-trattoria.com/xmlrpc.php">
+    <style>
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+    <link rel="icon" href="https://stefanos-trattoria.com/wp-content/uploads/2018/11/cropped-favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://stefanos-trattoria.com/wp-content/uploads/2018/11/cropped-favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://stefanos-trattoria.com/wp-content/uploads/2018/11/cropped-favicon-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://stefanos-trattoria.com/wp-content/uploads/2018/11/cropped-favicon-270x270.png" />
+    <style id="wp-custom-css">
+        .fl-logo-img {
+            width: 120px!important;
+        }
+        
+        .fl-page-bar {
+            border-bottom: none;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .menu-item-175 a {
+                display: none;
+            }
+            .menu-item-177 a {
+                display: none;
+            }
+            .menu-item-178 a {
+                display: none;
+            }
+            .menu-item-179 a {
+                display: none;
+            }
+            .menu-item-180 a {
+                display: none;
+            }
+        }
+        
+        .fl-page-bar-nav>li {
+            display: inline-block;
+            z-index: 300;
+        }
+        
+        .fl-page-nav-toggle-icon.fl-page-nav-toggle-visible-mobile .fl-page-nav .navbar-toggle {
+            top: 20px;
+        }
+        
+        .menu-item-254 a {
+            background-color: #48a718;
+            border-radius: 3px;
+            color: #fff!important;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px!important;
+            text-transform: uppercase;
+            text-shadow: 0 1px 1px #000;
+            vertical-align: bottom;
+        }
+        
+        .menu-item-254 a:hover {
+            background-color: #296b0e!important;
+        }
+        
+        .menu-item-275 a,
+        .menu-item-329 a {
+            background-color: #48a718;
+            border-radius: 3px;
+            color: #fff!important;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px!important;
+            text-transform: uppercase;
+            text-shadow: 0 1px 1px #000;
+            vertical-align: bottom;
+            margin-left: 10px
+        }
+        
+        .menu-item-275 a:hover,
+        .menu-item-329 a:hover {
+            background-color: #296b0e!important;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .fl-page-content {
+                z-index: -1;
+                margin-top: -158px;
+            }
+            .fl-page-nav-right .fl-page-header-wrap {
+                border: none;
+            }
+            .fl-page-header-container.container {
+                z-index: 100;
+            }
+            .fl-logo-img {
+                max-height: 80px!important;
+                padding: 2px;
+                width: auto!important;
+            }
+            .fl-page-nav-left .fl-page-header-row .col-lg-4,
+            .fl-page-nav-right .fl-page-header-row .col-lg-4 {
+                width: 25%;
+            }
+            .fl-page-nav-right .fl-page-header-row .fl-page-logo-wrap {
+                width: 25%;
+            }
+            .sliderpart {
+                text-shadow: 2px 2px 2px rgba(49, 49, 50, 0.48);
+            }
+            .nav-link i:hover {
+                color: #48a718!important;
+                font-size: 20px!important;
+            }
+            .nav-link i {
+                font-size: 20px!important;
+                font-weight: 500;
+            }
+            .fl-page-header-primary a {
+                color: #fff!important;
+            }
+            .fl-page-header-primary a:hover {
+                color: #48a718!important;
+            }
+            .fl-page-header-primary i {
+                color: #fff!important;
+            }
+            .nav-link {
+                padding: 6px!important;
+            }
+            .menu-item-175 a {
+                background-color: #48a718;
+                border-radius: 3px;
+                color: #fff!important;
+                display: inline-block;
+                font-size: 14px;
+                font-weight: bold;
+                padding: 6px 20px!important;
+                text-transform: uppercase;
+                text-shadow: 0 1px 1px #000;
+                vertical-align: bottom;
+            }
+            .menu-item-175 a:hover {
+                background-color: #296b0e;
+                color: #fff!important;
+            }
+            .menu-item-276 {
+                margin-left: 6px;
+            }
+            .menu-item-276 a {
+                background-color: #48a718;
+                border-radius: 3px;
+                color: #fff!important;
+                display: inline-block;
+                font-size: 14px;
+                font-weight: bold;
+                padding: 6px 20px!important;
+                text-transform: uppercase;
+                text-shadow: 0 1px 1px #000;
+                vertical-align: bottom;
+            }
+            .menu-item-276 a:hover {
+                background-color: #296b0e;
+                color: #fff!important;
+            }
+            .sub-menu a {
+                color: #666!important;
+            }
+        }
+        
+        .fl-button {
+            border-radius: 5px!important;
+        }
+    </style>
+</head>
+
+<body class="home page-template-default page page-id-2 fl-builder fl-theme-builder-footer fl-framework-bootstrap-4 fl-preset-default fl-full-width fl-nav-mobile-offcanvas fl-offcanvas-push-opacity-left fl-submenu-indicator" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+    <a aria-label="Skip to content" class="fl-screen-reader-text" href="#fl-main-content">Skip to content</a>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MP5G85V"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="fl-page">
+        <header class="fl-page-header fl-page-header-fixed fl-page-nav-right fl-page-nav-toggle-icon fl-page-nav-toggle-visible-mobile" role="banner">
+            <div class="fl-page-header-wrap">
+                <div class="fl-page-header-container container">
+                    <div class="fl-page-header-row row">
+                        <div class="col-md-12 col-lg-3 fl-page-logo-wrap">
+                            <div class="fl-page-header-logo">
+                                <a href="https://stefanos-trattoria.com/"><img loading="false" data-no-lazy="1" class="fl-logo-img" itemscope itemtype="https://schema.org/ImageObject" src="https://stefanos-trattoria.com/wp-content/uploads/2018/11/Logo-Header-Black.png" data-retina="https://stefanos-trattoria.com/wp-content/uploads/2018/11/Logo-Header-Black.png"
+                                        title="" alt="Stefanos Trattoria" />
+                                    <meta itemprop="name" content="Stefanos Trattoria" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-9 fl-page-fixed-nav-wrap">
+                            <div class="fl-page-nav-wrap">
+                                <nav class="fl-page-nav fl-nav navbar navbar-default navbar-expand-md" aria-label="Header Menu" role="navigation">
+                                    <button type="button" class="navbar-toggle navbar-toggler" data-toggle="collapse" data-target=".fl-page-nav-collapse">
+								<span><i class="fas fa-bars" aria-hidden="true"></i><span class="sr-only">Menu</span></span>
+							</button>
+                                    <div class="fl-page-nav-collapse collapse navbar-collapse">
+                                        <ul id="menu-main" class="nav navbar-nav navbar-right menu fl-theme-menu">
+                                            <li id="menu-item-172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-172 nav-item"><a href="https://stefanos-trattoria.com/" aria-current="page" class="nav-link">Home</a></li>
+                                            <li id="menu-item-173" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-173 nav-item"><a href="https://stefanos-trattoria.com/#about" aria-current="page" class="nav-link">About Us</a></li>
+                                            <li id="menu-item-176" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-176 nav-item"><a href="#" class="nav-link">Menu</a>
+                                                <div class="fl-submenu-icon-wrap"><span class="fl-submenu-toggle-icon"></span></div>
+                                                <ul class="sub-menu">
+                                                    <li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171 nav-item"><a href="https://stefanos-trattoria.com/lunch-menu/" class="nav-link">Lunch Menu</a></li>
+                                                    <li id="menu-item-170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170 nav-item"><a href="https://stefanos-trattoria.com/dinner-menu/" class="nav-link">Dinner Menu</a></li>
+                                                </ul>
+                                            </li>
+                                            <li id="menu-item-169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-169 nav-item"><a href="https://stefanos-trattoria.com/gallery/" class="nav-link">Gallery</a></li>
+                                            <li id="menu-item-168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-168 nav-item"><a href="https://stefanos-trattoria.com/catering/" class="nav-link">Catering</a></li>
+                                            <li id="menu-item-167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167 nav-item"><a href="https://stefanos-trattoria.com/locations/" class="nav-link">Location</a></li>
+                                            <li id="menu-item-174" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-174 nav-item"><a href="https://stefanos-trattoria.com/#contact" aria-current="page" class="nav-link">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- .fl-page-header-fixed -->
+        <div class="fl-page-bar">
+            <div class="fl-page-bar-container container">
+                <div class="fl-page-bar-row row">
+                    <div class="col-lg-12 text-center clearfix">
+                        <nav class="top-bar-nav" aria-label="Top Bar Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation">
+                            <ul id="menu-mobile" class="fl-page-bar-nav nav navbar-nav menu">
+                                <li id="menu-item-254" class="fl-button menu-item menu-item-type-custom menu-item-object-custom menu-item-254 nav-item"><a target="_blank" rel="noopener" href="https://togoorder.com/web/2758#/" class="nav-link">Online Order</a></li>
+                                <li id="menu-item-275" class="fl-button menu-item menu-item-type-custom menu-item-object-custom menu-item-275 nav-item"><a href="tel:4076590101" class="nav-link">Call Now</a></li>
+                                <li id="menu-item-329" class="fl-button menu-item menu-item-type-post_type menu-item-object-page menu-item-329 nav-item"><a href="https://stefanos-trattoria.com/catering/" class="nav-link">Catering</a></li>
+                                <li id="menu-item-297" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-297 nav-item"><a href="https://www.facebook.com/Stefanos-Trattoria-115622970772/" class="nav-link"><i class="fab fa-facebook-f"></i></a></li>
+                                <li id="menu-item-298" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-298 nav-item"><a href="https://www.yelp.com/biz/stefanos-trattoria-winter-springs-2" class="nav-link"><i class="fab fa-yelp"></i></a></li>
+                                <li id="menu-item-299" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-299 nav-item"><a href="https://www.tripadvisor.com/Restaurant_Review-g34748-d1205153-Reviews-Stefano_s_Trattoria-Winter_Springs_Florida.html" class="nav-link"><i class="fab fa-tripadvisor"></i></a></li>
+                                <li id="menu-item-300" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-300 nav-item"><a href="https://foursquare.com/v/stefanos-trattoria/4b2c0f7ff964a520aac024e3" class="nav-link"><i class="fab fa-foursquare"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .fl-page-bar -->
+        <header class="fl-page-header fl-page-header-primary fl-page-nav-right fl-page-nav-toggle-icon fl-page-nav-toggle-visible-mobile" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner">
+            <div class="fl-page-header-wrap">
+                <div class="fl-page-header-container container">
+                    <div class="fl-page-header-row row">
+                        <div class="col-md-12 col-lg-4 fl-page-header-logo-col">
+                            <div class="fl-page-header-logo" itemscope="itemscope" itemtype="https://schema.org/Organization">
+                                <a href="https://stefanos-trattoria.com/" itemprop="url"><img loading="false" data-no-lazy="1" class="fl-logo-img" itemscope itemtype="https://schema.org/ImageObject" src="https://stefanos-trattoria.com/wp-content/uploads/2018/11/Logo-Header-White.png" data-retina="https://stefanos-trattoria.com/wp-content/uploads/2018/11/Logo-Header-White.png"
+                                        data-mobile="https://stefanos-trattoria.com/wp-content/uploads/2018/11/Logo-Header-Black.png" title="" alt="Stefanos Trattoria" />
+                                    <meta itemprop="name" content="Stefanos Trattoria" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-8 fl-page-nav-col">
+                            <div class="fl-page-nav-wrap">
+                                <nav class="fl-page-nav fl-nav navbar navbar-default navbar-expand-md" aria-label="Header Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation">
+                                    <button type="button" class="navbar-toggle navbar-toggler" data-toggle="collapse" data-target=".fl-page-nav-collapse">
+								<span><i class="fas fa-bars" aria-hidden="true"></i><span class="sr-only">Menu</span></span>
+							</button>
+                                    <div class="fl-page-nav-collapse collapse navbar-collapse">
+                                        <ul id="menu-main-1" class="nav navbar-nav navbar-right menu fl-theme-menu">
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-172 nav-item"><a href="https://stefanos-trattoria.com/" aria-current="page" class="nav-link">Home</a></li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-173 nav-item"><a href="https://stefanos-trattoria.com/#about" aria-current="page" class="nav-link">About Us</a></li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-176 nav-item"><a href="#" class="nav-link">Menu</a>
+                                                <div class="fl-submenu-icon-wrap"><span class="fl-submenu-toggle-icon"></span></div>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171 nav-item"><a href="https://stefanos-trattoria.com/lunch-menu/" class="nav-link">Lunch Menu</a></li>
+                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170 nav-item"><a href="https://stefanos-trattoria.com/dinner-menu/" class="nav-link">Dinner Menu</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-169 nav-item"><a href="https://stefanos-trattoria.com/gallery/" class="nav-link">Gallery</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-168 nav-item"><a href="https://stefanos-trattoria.com/catering/" class="nav-link">Catering</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167 nav-item"><a href="https://stefanos-trattoria.com/locations/" class="nav-link">Location</a></li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-174 nav-item"><a href="https://stefanos-trattoria.com/#contact" aria-current="page" class="nav-link">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- .fl-page-header -->
+        <div id="fl-main-content" class="fl-page-content" itemprop="mainContentOfPage" role="main">
+
+
+            <div class="fl-content-full container">
+                <div class="row">
+                    <div class="fl-content col-md-12">
+                        <article class="fl-post post-2 page type-page status-publish hentry" id="fl-post-2" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+
+                            <div class="fl-post-content clearfix" itemprop="text">
+                                <div class="fl-builder-content fl-builder-content-2 fl-builder-content-primary fl-builder-global-templates-locked" data-post-id="2">
+                                    <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-5bfc4f71cc291 fl-row-full-height fl-row-align-center" data-node="5bfc4f71cc291">
+                                        <div class="fl-row-content-wrap">
+                                            <div class="uabb-row-separator uabb-top-row-separator">
+                                            </div>
+                                            <div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+                                                <div class="fl-col-group fl-node-5bfc4f71cd6a2" data-node="5bfc4f71cd6a2">
+                                                    <div class="fl-col fl-node-5bfc4f71cd77d fl-col-has-cols" data-node="5bfc4f71cd77d">
+                                                        <div class="fl-col-content fl-node-content">
+                                                            <div class="fl-module fl-module-heading fl-node-5bfc4f71cc187 sliderpart" data-node="5bfc4f71cc187">
+                                                                <div class="fl-module-content fl-node-content">
+                                                                    <h1 class="fl-heading">
+                                                                        <span class="fl-heading-text">Authentic Sicilian Cuisine</span>
+                                                                    </h1>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="fl-col-group fl-node-5e61138d3ccf9 fl-col-group-nested" data-node="5e61138d3ccf9">
+                                                                <div class="fl-col fl-node-5e61138d3cede fl-col-small" data-node="5e61138d3cede">
+                                                                    <div class="fl-col-content fl-node-content">
+                                                                        <div class="fl-module fl-module-button fl-node-5e611393e0669" data-node="5e611393e0669">
+                                                                            <div class="fl-module-content fl-node-content">
+                                                                                <div class="fl-button-wrap fl-button-width-auto fl-button-center fl-button-has-icon">
+                                                                                    <a href="https://togoorder.com/web/2758#/" target="_blank" class="fl-button" role="button" rel="noopener">
+                                                                                        <i class="fl-button-icon fl-button-icon-before fas fa-mobile-alt" aria-hidden="true"></i>
+                                                                                        <span class="fl-button-text">Order Online</span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fl-col fl-node-5fceb0945ddfb fl-col-small" data-node="5fceb0945ddfb">
+                                                                    <div class="fl-col-content fl-node-content">
+                                                                        <div class="fl-module fl-module-button fl-node-5fceb08db230f" data-node="5fceb08db230f">
+                                                                            <div class="fl-module-content fl-node-content">
+                                                                                <div class="fl-button-wrap fl-button-width-auto fl-button-center fl-button-has-icon">
+                                                                                    <a href="https://stefanos-trattoria.com/catering/" target="_self" class="fl-button" role="button">
+                                                                                        <i class="fl-button-icon fl-button-icon-before fas fa-utensils" aria-hidden="true"></i>
+                                                                                        <span class="fl-button-text">Catering</span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div style="background:black" class="fl-col fl-node-5e61138d3cee7 fl-col-small" data-node="5e61138d3cee7">
+                                                                    <div class="fl-col-content fl-node-content">
+                                                                        <div class="fl-module fl-module-button fl-node-5bfc5046f0e27" data-node="5bfc5046f0e27">
+                                                                            <div class="fl-module-content fl-node-content">
+                                                                                <div class="fl-button-wrap fl-button-width-auto fl-button-center fl-button-has-icon">
+                                                                                    <a style="background:white;" href="#contact" target="_self" class="fl-button" role="button">
+                                                                                        <i class="fl-button-icon fl-button-icon-before far fa-calendar-check" aria-hidden="true"></i>
+                                                                                        <span style="color:black" class="fl-button-text">What UP Fam!? It's Jnutt!</span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fl-row fl-row-full-width fl-row-bg-none fl-node-5bfc5fcf68039" data-node="5bfc5fcf68039">
+                                        <div class="fl-row-content-wrap">
+                                            <div class="uabb-row-separator uabb-top-row-separator">
+                                            </div>
+                                            <div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+                                                <div class="fl-col-group fl-node-5bfc5fcf698bf" data-node="5bfc5fcf698bf">
+                                                    <div class="fl-col fl-node-5bfc5fcf6999f fl-col-small" data-node="5bfc5fcf6999f">
+                                                        <div class="fl-col-content fl-node-content">
+                                                            <div class="fl-module fl-module-heading fl-node-5bfc5fd7737eb" data-node="5bfc5fd7737eb">
+                                                                <div class="fl-module-content fl-node-content">
+                                                                    <h2 class="fl-heading">
+                                                                        <span class="fl-heading-text">Order Online</span>
+                                                                    </h2>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fl-module fl-module-rich-text fl-node-5bfc5fe98e0fb" data-node="5bfc5fe98e0fb">
+                                                                <div class="fl-module-content fl-node-content">
+                                                                    <div class="fl-rich-text">
+                                                                        <p><strong>Hungry for Stefano’s, but short on time?</strong></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fl-module fl-module-rich-text fl-node-5bfc600d2c371" data-node="5bfc600d2c371">
+                                                                <div class="fl-module-content fl-node-content">
+                                                                    <div class="fl-rich-text">
+                                                                        <p>Order Stefano’s for pick up, avoid waiting on hold or repeating your credit card number over the phone. Here at Stefano’s Trattoria, we want to make things as convenient as possible
+                                                                            for you. Download our app or order directly from our Website and enjoy ordering our delicious food today. Stefano’s pledges that your order will be right and right on time.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fl-module fl-module-button fl-node-5bfc61177517e" data-node="5bfc61177517e">
+                                                                <div class="fl-module-content fl-node-content">
+                                                                    <div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+                                                                        <a href="https://togoorder.com/web/2758#/" target="_blank" class="fl-button" role="button" rel="noopener">
+                                                                            <i class="fl-button-icon fl-button-icon-before fas fa-mobile-alt" aria-hidden="true"></i>
+                                                                            <span class="fl-button-text">ORDER ONLINE</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fl-col fl-node-5bfc5fcf699e0 fl-col-small" data-node="5bfc5fcf699e0">
+                                                        <div class="fl-col-content fl-node-content">
+                                                            <div class="fl-module fl-module-photo fl-node-5bfc602db27ca fl-animation fl-fade-right" data-node="5bfc602db27ca" data-animation-delay="0.0">
+                                                                <div class="fl-module-content fl-node-content">
+                                                                    <div class="fl-photo fl-photo-align-right" itemscope itemtype="https://schema.org/ImageObject">
+                                                                        <div class="fl-photo-content fl-photo-img-png">
+                                                                            <img loading="lazy" class="fl-photo-img wp-image-95 size-full" src="https://stefanos-trattoria.com/wp-content/uploads/2018/11/02-OrderOnline.png" alt="02-OrderOnline" itemprop="image" height="460" width="511" title="02-OrderOnline" srcset="https://stefanos-trattoria.com/wp-content/uploads/2018/11/02-OrderOnline.png 511w, https://stefanos-trattoria.com/wp-content/uploads/2018/11/02-OrderOnline-300x270.png 300w"
+                                                                                sizes="(max-width: 511px) 100vw, 511px" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fl-row fl-row-full-width fl-row-bg-color fl-node-5bfc61496af10" data-node="5bfc61496af10">
+                                        <div class="fl-row-content-wrap">
+                                            <div class="uabb-row-separator uabb-top-row-separator">
+                                            </div>
+                                            <div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+                                                <div class="fl-col-group fl-node-5bfc61496d698" data-node="5bfc61496d698">
+                                                    <div class="fl-col fl-node-5bfc61496d77f" data-node="5bfc61496d77f">
+                                                        <div class="fl-col-content fl-node-content">
+                                                            <div class="fl-module fl-module-heading fl-node-5bfc614f57a22" data-node="5bfc614f57a22">
+                                                                <div class="fl-module-content fl-node-content">
+                                                                    <h2 class="fl-heading">
+                                                                        <span class="fl-heading-text">Gallery</span>
+                                                                    </h2>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="fl-col-group fl-node-5bfc6172e007a" data-node="5bfc6172e007a">
+                                                    <div class="fl-col fl-node-5bfc6172e0186" data-node="5bfc6172e0186">
+                                                        <div class="fl-col-content fl-node-content">
+                                                            <div class="fl-module fl-module-photo-gallery fl-node-5bfc6172dffdc" data-node="5bfc6172dffdc">
+                                                                <div class="fl-module-content fl-node-content">
+                                                                    <div class="uabb-module-content uabb-photo-gallery uabb-gallery-grid4 from-bottom " data-all-filters=[]>
+                                                                        <div class="uabb-photo-gallery-item  uabb-photo-item-grid">
+                                                                            <div class="uabb-photo-gallery-content uabb-photo-gallery-link">
+
+                                                                                <a href="https://stefanos-trattoria.com/wp-content/uploads/2018/11/07-Gallery-Image.jpg" target="_blank" rel="noopener" data-caption="">
+
+                                                                                    <img class="uabb-gallery-img" src="https://stefanos-trattoria.com/wp-content/uploads/2018/11/07-Gallery-Image-300x300.jpg" alt="" title="07-Gallery-Image" />
+                                                                                    <!-- Overlay Wrapper -->
+                                                                                    <div class="uabb-background-mask from-bottom">
+                                                                                        <div class="uabb-inner-mask">
+
+
+                                                                                            <div class="uabb-overlay-icon">
+                                                                                                <i class="fa fa-plus-circle"></i>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- Overlay Wrapper Closed -->
+
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="uabb-photo-gallery-item  uabb-photo-item-grid">
+                                                                            <div class="uabb-photo-gallery-content uabb-photo-gallery-link">
+
+                                                                                <a href="https://stefanos-trattoria.com/wp-content/uploads/2018/11/09-Gallery-Image.jpg" target="_blank" rel="noopener" data-caption="">
+
+                                                                                    <img class="uabb-gallery-img" src="https://stefanos-trattoria.com/wp-content/uploads/2018/11/09-Gallery-Image-300x300.jpg" alt="" title="09-Gallery-Image" />
+                                                                                    <!-- Overlay Wrapper -->
+                                                                                    <div class="uabb-background-mask from-bottom">
+                                                                                        <div class="uabb-inner-mask">
+
+
+                                                                                            <div class="uabb-overlay-icon">
+                                                                                                <i class="fa fa-plus-circle"></i>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- Overlay Wrapper Closed -->
+
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="uabb-photo-gallery-item  uabb-photo-item-grid">
+                                                                            <div class="uabb-photo-gallery-content uabb-photo-gallery-link">
+
+                                                                                <a href="https://stefanos-trattoria.com/wp-content/uploads/2018/11/06-Gallery-Image.jpg" target="_blank" rel="noopener" data-caption="">
+
+                                                                                    <img class="uabb-gallery-img" src="https://stefanos-trattoria.com/wp-content/uploads/2018/11/06-Gallery-Image-300x300.jpg" alt="" title="06-Gallery-Image" />
+                                                                                    <!-- Overlay Wrapper -->
+                                                                                    <div class="uabb-background-mask from-bottom">
+                                                                                        <div class="uabb-inner-mask">
+
+
+                                                                                            <div class="uabb-overlay-icon">
+                                                                                                <i class="fa fa-plus-circle"></i>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- Overlay Wrapper Closed -->
+
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="uabb-photo-gallery-item  uabb-photo-item-grid">
+                                                                            <div class="uabb-photo-gallery-content uabb-photo-gallery-link">
+
+                                                                                <a href="https://stefanos-trattoria.com/wp-content/uploads/2018/11/12-Gallery-Image.jpg" target="_blank" rel="noopener" data-caption="">
+
+                                                                                    <img class="uabb-gallery-img" src="https://stefanos-trattoria.com/wp-content/uploads/2018/11/12-Gallery-Image-300x300.jpg" alt="" title="12-Gallery-Image" />
+                                                                                    <!-- Overlay Wrapper -->
+                                                                                    <div class="uabb-background-mask from-bottom">
+                                                                                        <div class="uabb-inner-mask">
+
+
+                                                                                            <div class="uabb-overlay-icon">
+                                                                                                <i class="fa fa-plus-circle"></i>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- Overlay Wrapper Closed -->
+
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="uabb-photo-gallery-item  uabb-photo-item-grid">
+                                                                            <div class="uabb-photo-gallery-content uabb-photo-gallery-link">
+
+                                                                                <a href="https://stefanos-trattoria.com/wp-content/uploads/2018/11/13-Gallery-Image.jpg" target="_blank" rel="noopener" data-caption="">
+
+                                                                                    <img class="uabb-gallery-img" src="https://stefanos-trattoria.com/wp-content/uploads/2018/11/13-Gallery-Image-300x300.jpg" alt="" title="13-Gallery-Image" />
+                                                                                    <!-- Overlay Wrapper -->
+                                                                                    <div class="uabb-background-mask from-bottom">
+                                                                                        <div class="uabb-inner-mask">
+
+
+                                                                                            <div class="uabb-overlay-icon">
+                                                                                                <i class="fa fa-plus-circle"></i>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- Overlay Wrapper Closed -->
+
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="uabb-photo-gallery-item  uabb-photo-item-grid">
+                                                                            <div class="uabb-photo-gallery-content uabb-photo-gallery-link">
+
+                                                                                <a href="https://stefanos-trattoria.com/wp-content/uploads/2018/11/05-Gallery-Image.jpg" target="_blank" rel="noopener" data-caption="">
+
+                                                                                    <img class="uabb-gallery-img" src="https://stefanos-trattoria.com/wp-content/uploads/2018/11/05-Gallery-Image-300x300.jpg" alt="" title="05-Gallery-Image" />
+                                                                                    <!-- Overlay Wrapper -->
+                                                                                    <div class="uabb-background-mask from-bottom">
+                                                                                        <div class="uabb-inner-mask">
+
+
+                                                                                            <div class="uabb-overlay-icon">
+                                                                                                <i class="fa fa-plus-circle"></i>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- Overlay Wrapper Closed -->
+
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="uabb-photo-gallery-item  uabb-photo-item-grid">
+                                                                            <div class="uabb-photo-gallery-content uabb-photo-gallery-link">
+
+                                                                                <a href="https://stefanos-trattoria.com/wp-content/uploads/2018/11/04-Gallery-Image.jpg" target="_blank" rel="noopener" data-caption="">
+
+                                                                                    <img class="uabb-gallery-img" src="https://stefanos-trattoria.com/wp-content/uploads/2018/11/04-Gallery-Image-300x300.jpg" alt="" title="04-Gallery-Image" />
+                                                                                    <!-- Overlay Wrapper -->
+                                                                                    <div class="uabb-background-mask from-bottom">
+                                                                                        <div class="uabb-inner-mask">
+
+
+                                                                                            <div class="uabb-overlay-icon">
+                                                                                                <i class="fa fa-plus-circle"></i>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- Overlay Wrapper Closed -->
+
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="uabb-photo-gallery-item  uabb-photo-item-grid">
+                                                                            <div class="uabb-photo-gallery-content uabb-photo-gallery-link">
+
+                                                                                <a href="https://stefanos-trattoria.com/wp-content/uploads/2018/11/02-Gallery-Image.jpg" target="_blank" rel="noopener" data-caption="">
+
+                                                                                    <img class="uabb-gallery-img" src="https://stefanos-trattoria.com/wp-content/uploads/2018/11/02-Gallery-Image-300x300.jpg" alt="" title="02-Gallery-Image" />
+                                                                                    <!-- Overlay Wrapper -->
+                                                                                    <div class="uabb-background-mask from-bottom">
+                                                                                        <div class="uabb-inner-mask">
+
+
+                                                                                            <div class="uabb-overlay-icon">
+                                                                                                <i class="fa fa-plus-circle"></i>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- Overlay Wrapper Closed -->
+
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-5bfc63cad8a71" data-node="5bfc63cad8a71">
+                                        <div class="fl-row-content-wrap">
+                                            <div class="uabb-row-separator uabb-top-row-separator">
+                                            </div>
+                                            <div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+                                                <div class="fl-col-group fl-node-5bfc63ceea29e" data-node="5bfc63ceea29e">
+                                                    <div class="fl-col fl-node-5bfc63ceea3fe" data-node="5bfc63ceea3fe">
+                                                        <div class="fl-col-content fl-node-content">
+                                                            <div id="about" class="fl-module fl-module-heading fl-node-5bfc6405810b9" data-node="5bfc6405810b9">
+                                                                <div class="fl-module-content fl-node-content">
+                                                                    <h2 class="fl-heading">
+                                                                        <span class="fl-heading-text">About Us</span>
+                                                                    </h2>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="fl-col-group fl-node-5bfc63cadc27b" data-node="5bfc63cadc27b">
+                                                    <div class="fl-col fl-node-5bfc63cadc3a6 fl-col-small" data-node="5bfc63cadc3a6">
+                                                        <div class="fl-col-content fl-node-content">
+                                                            <div class="fl-module fl-module-video fl-node-5bfc64446b366" data-node="5bfc64446b366">
+                                                                <div class="fl-module-content fl-node-content">
+
+                                                                    <div class="fl-video fl-embed-video">
+                                                                        <iframe loading="lazy" width="543" height="306" src="https://www.youtube.com/embed/6ay1Sbtsfbw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fl-col fl-node-5bfc63cadc3e8" data-node="5bfc63cadc3e8">
+                                                        <div class="fl-col-content fl-node-content">
+                                                            <div class="fl-module fl-module-rich-text fl-node-5bfc645a22592 fl-animation fl-fade-right" data-node="5bfc645a22592" data-animation-delay="0.0">
+                                                                <div class="fl-module-content fl-node-content">
+                                                                    <div class="fl-rich-text">
+                                                                        <p><strong>MEANING OF TRATTORIA:</strong><br /> trat·to·ri·a
+                                                                            <br /> /trätəˈrēə/
+                                                                            <br /> noun: trattoria; plural noun: trattorias</p>
+                                                                        <p>An Italian restaurant serving homestyle comfort food. Here at Stefano’s Trattoria we offer Time, Quality, and Passion, the best ingredients for an exquisite meal. Quality and Passion
+                                                                            we do have. Time you have to give us. We are very delighted to have you as our guests. We hope our love and dedication to this restaurant will add to the pleasure of your meal.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fl-row fl-row-full-width fl-row-bg-none fl-node-5bfc660075d25" data-node="5bfc660075d25">
+                                        <div class="fl-row-content-wrap">
+                                            <div class="uabb-row-separator uabb-top-row-separator">
+                                            </div>
+                                            <div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+                                                <div class="fl-col-group fl-node-5bfc6603d1122" data-node="5bfc6603d1122">
+                                                    <div class="fl-col fl-node-5bfc6603d128a" data-node="5bfc6603d128a">
+                                                        <div class="fl-col-content fl-node-content">
+                                                            <div class="fl-module fl-module-heading fl-node-5bfc669771567" data-node="5bfc669771567">
+                                                                <div class="fl-module-content fl-node-content">
+                                                                    <h2 class="fl-heading">
+                                                                        <span class="fl-heading-text">Catering</span>
+                                                                    </h2>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="fl-col-group fl-node-5bfc660079b9a fl-col-group-equal-height fl-col-group-align-center" data-node="5bfc660079b9a">
+                                                    <div class="fl-col fl-node-5bfc660079cd3 fl-col-small" data-node="5bfc660079cd3">
+                                                        <div class="fl-col-content fl-node-content">
+                                                            <div class="fl-module fl-module-rich-text fl-node-5bfc66e58bacf fl-animation fl-fade-left" data-node="5bfc66e58bacf" data-animation-delay="0.0" data-animation-duration="1">
+                                                                <div class="fl-module-content fl-node-content">
+                                                                    <div class="fl-rich-text">
+                                                                        <p>Perfect for an office lunch or informal gathering! Whether it’s a meeting break, tailgate party or wedding reception, Stefano’s caters to you!</p>
+                                                                        <p>On our Catering Menu you will find some selections from our regular restaurant menu, available in larger portions. The same quality food you get in the restaurant, but portioned to
+                                                                            feed your crowd. This menu is extremely popular with our corporate clients that order office lunches and dinners as well as our residential clients that order for a birthday party
+                                                                            or any special occasion. Prepared cuisine is available for pick-up in Winter Springs, accompanied by safe reheating instructions. Stefano’s Trattoria is always certain to please
+                                                                            the crowd and make the host look great!</p>
+                                                                        <p>Order from our app or directly from our Website, your can also contact our Special Event Planners, Alejandro Martinez @ (407) 659-0101</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fl-module fl-module-button fl-node-5bfc66f383c65" data-node="5bfc66f383c65">
+                                                                <div class="fl-module-content fl-node-content">
+                                                                    <div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+                                                                        <a href="https://partners.gatherhere.com/lead-form/rn9km36w?source=lead_form" target="_blank" class="fl-button" role="button" rel="noopener">
+                                                                            <i class="fl-button-icon fl-button-icon-before far fa-calendar-check" aria-hidden="true"></i>
+                                                                            <span class="fl-button-text">Reserve Your Event</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fl-col fl-node-5bfc660079d1c fl-col-small" data-node="5bfc660079d1c">
+                                                        <div class="fl-col-content fl-node-content">
+                                                            <div class="fl-module fl-module-photo fl-node-5bfc66b42983e fl-animation fl-fade-right" data-node="5bfc66b42983e" data-animation-delay="0.0">
+                                                                <div class="fl-module-content fl-node-content">
+                                                                    <div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+                                                                        <div class="fl-photo-content fl-photo-img-jpg">
+                                                                            <img loading="lazy" class="fl-photo-img wp-image-113 size-full" src="https://stefanos-trattoria.com/wp-content/uploads/2018/11/13-Catering-Image.jpg" alt="13-Catering-Image" itemprop="image" height="461" width="513" title="13-Catering-Image" srcset="https://stefanos-trattoria.com/wp-content/uploads/2018/11/13-Catering-Image.jpg 513w, https://stefanos-trattoria.com/wp-content/uploads/2018/11/13-Catering-Image-300x270.jpg 300w"
+                                                                                sizes="(max-width: 513px) 100vw, 513px" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fl-row fl-row-full-width fl-row-bg-color fl-node-5bfd6e85a855e" data-node="5bfd6e85a855e">
+                                        <div class="fl-row-content-wrap">
+                                            <div class="uabb-row-separator uabb-top-row-separator">
+                                            </div>
+                                            <div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+                                                <div class="fl-col-group fl-node-5bfd6e63bcf32" data-node="5bfd6e63bcf32">
+                                                    <div class="fl-col fl-node-5bfd6e63bcf72" data-node="5bfd6e63bcf72">
+                                                        <div class="fl-col-content fl-node-content">
+                                                            <div id="contact" class="fl-module fl-module-heading fl-node-5bfd6e63bcfae" data-node="5bfd6e63bcfae">
+                                                                <div class="fl-module-content fl-node-content">
+                                                                    <h3 class="fl-heading">
+                                                                        <span class="fl-heading-text">Get In Touch</span>
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fl-module fl-module-widget fl-node-5bfd6e63bcfe7" data-node="5bfd6e63bcfe7">
+                                                                <div class="fl-module-content fl-node-content">
+                                                                    <div class="fl-widget">
+                                                                        <div class="widget gform_widget">
+                                                                            <link rel='stylesheet' id='gforms_reset_css-css' href='https://stefanos-trattoria.com/wp-content/plugins/gravityforms/legacy/css/formreset.min.css?ver=2.5.12' media='all' />
+                                                                            <link rel='stylesheet' id='gforms_formsmain_css-css' href='https://stefanos-trattoria.com/wp-content/plugins/gravityforms/legacy/css/formsmain.min.css?ver=2.5.12' media='all' />
+                                                                            <link rel='stylesheet' id='gforms_ready_class_css-css' href='https://stefanos-trattoria.com/wp-content/plugins/gravityforms/legacy/css/readyclass.min.css?ver=2.5.12' media='all' />
+                                                                            <link rel='stylesheet' id='gforms_browsers_css-css' href='https://stefanos-trattoria.com/wp-content/plugins/gravityforms/legacy/css/browsers.min.css?ver=2.5.12' media='all' />
+                                                                            <script src='https://stefanos-trattoria.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7' id='regenerator-runtime-js'></script>
+                                                                            <script src='https://stefanos-trattoria.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+                                                                            <script src='https://stefanos-trattoria.com/wp-includes/js/dist/dom-ready.min.js?ver=71883072590656bf22c74c7b887df3dd' id='wp-dom-ready-js'></script>
+                                                                            <script src='https://stefanos-trattoria.com/wp-includes/js/dist/hooks.min.js?ver=a7edae857aab69d69fa10d5aef23a5de' id='wp-hooks-js'></script>
+                                                                            <script src='https://stefanos-trattoria.com/wp-includes/js/dist/i18n.min.js?ver=5f1269854226b4dd90450db411a12b79' id='wp-i18n-js'></script>
+                                                                            <script id='wp-i18n-js-after'>
+                                                                                wp.i18n.setLocaleData({
+                                                                                    'text direction\u0004ltr': ['ltr']
+                                                                                });
+                                                                            </script>
+                                                                            <script id='wp-a11y-js-translations'>
+                                                                                (function(domain, translations) {
+                                                                                    var localeData = translations.locale_data[domain] || translations.locale_data.messages;
+                                                                                    localeData[""].domain = domain;
+                                                                                    wp.i18n.setLocaleData(localeData, domain);
+                                                                                })("default", {
+                                                                                    "locale_data": {
+                                                                                        "messages": {
+                                                                                            "": {}
+                                                                                        }
+                                                                                    }
+                                                                                });
+                                                                            </script>
+                                                                            <script src='https://stefanos-trattoria.com/wp-includes/js/dist/a11y.min.js?ver=0ac8327cc1c40dcfdf29716affd7ac63' id='wp-a11y-js'></script>
+                                                                            <script defer='defer' src='https://stefanos-trattoria.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.5.12' id='gform_json-js'></script>
+                                                                            <script id='gform_gravityforms-js-extra'>
+                                                                                var gform_i18n = {
+                                                                                    "datepicker": {
+                                                                                        "days": {
+                                                                                            "monday": "Mon",
+                                                                                            "tuesday": "Tue",
+                                                                                            "wednesday": "Wed",
+                                                                                            "thursday": "Thu",
+                                                                                            "friday": "Fri",
+                                                                                            "saturday": "Sat",
+                                                                                            "sunday": "Sun"
+                                                                                        },
+                                                                                        "months": {
+                                                                                            "january": "January",
+                                                                                            "february": "February",
+                                                                                            "march": "March",
+                                                                                            "april": "April",
+                                                                                            "may": "May",
+                                                                                            "june": "June",
+                                                                                            "july": "July",
+                                                                                            "august": "August",
+                                                                                            "september": "September",
+                                                                                            "october": "October",
+                                                                                            "november": "November",
+                                                                                            "december": "December"
+                                                                                        },
+                                                                                        "firstDay": 1,
+                                                                                        "iconText": "Select date"
+                                                                                    }
+                                                                                };
+                                                                                var gf_global = {
+                                                                                    "gf_currency_config": {
+                                                                                        "name": "U.S. Dollar",
+                                                                                        "symbol_left": "$",
+                                                                                        "symbol_right": "",
+                                                                                        "symbol_padding": "",
+                                                                                        "thousand_separator": ",",
+                                                                                        "decimal_separator": ".",
+                                                                                        "decimals": 2
+                                                                                    },
+                                                                                    "base_url": "https:\/\/stefanos-trattoria.com\/wp-content\/plugins\/gravityforms",
+                                                                                    "number_formats": [],
+                                                                                    "spinnerUrl": "https:\/\/stefanos-trattoria.com\/wp-content\/plugins\/gravityforms\/images\/spinner.svg",
+                                                                                    "strings": {
+                                                                                        "newRowAdded": "New row added.",
+                                                                                        "rowRemoved": "Row removed",
+                                                                                        "formSaved": "The form has been saved.  The content contains the link to return and complete the form."
+                                                                                    }
+                                                                                };
+                                                                            </script>
+                                                                            <script defer='defer' src='https://stefanos-trattoria.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.5.12' id='gform_gravityforms-js'></script>
+                                                                            <script defer='defer' src='https://www.google.com/recaptcha/api.js?hl=en&#038;ver=5.8.1#038;render=explicit' id='gform_recaptcha-js'></script>
+                                                                            <script defer='defer' src='https://stefanos-trattoria.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.5.12' id='gform_placeholder-js'></script>
+                                                                            <script type="text/javascript"></script>
+                                                                            <div class='gf_browser_safari gform_wrapper gform_legacy_markup_wrapper' id='gform_wrapper_1'>
+                                                                                <form method='post' enctype='multipart/form-data' id='gform_1' action='/' novalidate>
+                                                                                    <div class='gform_body gform-body'>
+                                                                                        <ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'>
+                                                                                            <li id="field_1_1" class="gfield gf_left_half field_sublabel_below field_description_below hidden_label gfield_visibility_visible"><label class='gfield_label screen-reader-text' for='input_1_1'>Name</label>
+                                                                                                <div class='ginput_container ginput_container_text'><input name='input_1' id='input_1_1' type='text' value='' class='large' tabindex='1' placeholder='Name' aria-invalid="false" /> </div>
+                                                                                            </li>
+                                                                                            <li id="field_1_5" class="gfield gf_right_half gfield_contains_required field_sublabel_below field_description_below hidden_label gfield_visibility_visible"><label class='gfield_label screen-reader-text' for='input_1_5'>Email Address<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                                                                                <div class='ginput_container ginput_container_email'>
+                                                                                                    <input name='input_5' id='input_1_5' type='email' value='' class='large' tabindex='2' placeholder='Email Address' aria-required="true" aria-invalid="false" />
+                                                                                                </div>
+                                                                                            </li>
+                                                                                            <li id="field_1_3" class="gfield field_sublabel_below field_description_below hidden_label gfield_visibility_visible"><label class='gfield_label screen-reader-text' for='input_1_3'>Message</label>
+                                                                                                <div class='ginput_container ginput_container_textarea'><textarea name='input_3' id='input_1_3' class='textarea medium' tabindex='3' placeholder='Message' aria-invalid="false" rows='10' cols='50'></textarea></div>
+                                                                                            </li>
+                                                                                            <li id="field_1_4" class="gfield field_sublabel_below field_description_below gfield_visibility_visible"><label class='gfield_label' for='input_1_4'>Captcha</label>
+                                                                                                <div id='input_1_4' class='ginput_container ginput_recaptcha' data-sitekey='6Le4OH0UAAAAAIzKi4aSaVN__huHalkYfJuvcZmv' data-theme='light' data-tabindex='4' data-badge=''></div>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                    <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Submit' tabindex='5' onclick='if(window["gf_submitting_1"]){return false;}  if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  '
+                                                                                            onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_1"]){return false;} if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  jQuery("#gform_1").trigger("submit",[true]); }'
+                                                                                        />
+                                                                                        <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+                                                                                        <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+
+                                                                                        <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+                                                                                        <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjRkMjdhNzAzMTRmMDRmMDdhNTNlM2IzMTM1NjhmNGYyIl0=' />
+                                                                                        <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+                                                                                        <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+                                                                                        <input type='hidden' name='gform_field_values' value='' />
+
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uabb-js-breakpoint" style="display: none;"></div>
+                            </div>
+                            <!-- .fl-post-content -->
+
+                        </article>
+
+                        <!-- .fl-post -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- .fl-page-content -->
+        <footer class="fl-builder-content fl-builder-content-120 fl-builder-global-templates-locked" data-post-id="120" data-type="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+            <div class="fl-row fl-row-full-width fl-row-bg-color fl-node-5bfc691cc8c71" data-node="5bfc691cc8c71">
+                <div class="fl-row-content-wrap">
+                    <div class="uabb-row-separator uabb-top-row-separator">
+                    </div>
+                    <div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+                        <div class="fl-col-group fl-node-5bfc691cc8caa" data-node="5bfc691cc8caa">
+                            <div class="fl-col fl-node-5bfc691cc8d56 fl-col-small" data-node="5bfc691cc8d56">
+                                <div class="fl-col-content fl-node-content">
+                                    <div class="fl-module fl-module-heading fl-node-5bfc691cc9007" data-node="5bfc691cc9007">
+                                        <div class="fl-module-content fl-node-content">
+                                            <h4 class="fl-heading">
+                                                <span class="fl-heading-text">Stay Connected</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="fl-module fl-module-icon-group fl-node-5bfc6a833a783" data-node="5bfc6a833a783">
+                                        <div class="fl-module-content fl-node-content">
+                                            <div class="fl-icon-group">
+                                                <span class="fl-icon">
+								<a href="https://www.facebook.com/Stefanos-Trattoria-115622970772/" target="_blank" rel="noopener" >
+							<i class="fab fa-facebook-f" aria-hidden="true"></i>
+						</a>
+			</span>
+                                                <span class="fl-icon">
+								<a href="https://www.yelp.com/biz/stefanos-trattoria-winter-springs-2" target="_blank" rel="noopener" >
+							<i class="fab fa-yelp" aria-hidden="true"></i>
+						</a>
+			</span>
+                                                <span class="fl-icon">
+								<a href="https://www.tripadvisor.com/Restaurant_Review-g34748-d1205153-Reviews-Stefano_s_Trattoria-Winter_Springs_Florida.html" target="_blank" rel="noopener" >
+							<i class="fab fa-tripadvisor" aria-hidden="true"></i>
+						</a>
+			</span>
+                                                <span class="fl-icon">
+								<a href="https://foursquare.com/v/stefanos-trattoria/4b2c0f7ff964a520aac024e3" target="_blank" rel="noopener" >
+							<i class="fab fa-foursquare" aria-hidden="true"></i>
+						</a>
+			</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fl-module fl-module-rich-text fl-node-5bff01ce3a945" data-node="5bff01ce3a945">
+                                        <div class="fl-module-content fl-node-content">
+                                            <div class="fl-rich-text">
+                                                <p style="text-align: center;"><span style="font-size: 26px;"><a href="tel:4076590101">(407) 659-0101</a></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fl-col fl-node-5bfc691cc8d1b" data-node="5bfc691cc8d1b">
+                                <div class="fl-col-content fl-node-content">
+                                </div>
+                            </div>
+                            <div class="fl-col fl-node-5bfc691cc8ce2 fl-col-small" data-node="5bfc691cc8ce2">
+                                <div class="fl-col-content fl-node-content">
+                                    <div class="fl-module fl-module-photo fl-node-5bfc695bc70b1" data-node="5bfc695bc70b1">
+                                        <div class="fl-module-content fl-node-content">
+                                            <div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+                                                <div class="fl-photo-content fl-photo-img-png">
+                                                    <img loading="lazy" class="fl-photo-img wp-image-11 size-full" src="https://stefanos-trattoria.com/wp-content/uploads/2018/11/Logo-Header-White.png" alt="Logo-Header-White" itemprop="image" height="100" width="218" title="Logo-Header-White" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fl-row fl-row-full-width fl-row-bg-color fl-node-5bfc691cc8b7e" data-node="5bfc691cc8b7e">
+                <div class="fl-row-content-wrap">
+                    <div class="uabb-row-separator uabb-top-row-separator">
+                    </div>
+                    <div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+                        <div class="fl-col-group fl-node-5bfc691cc8bbf" data-node="5bfc691cc8bbf">
+                            <div class="fl-col fl-node-5bfc691cc8bfc" data-node="5bfc691cc8bfc">
+                                <div class="fl-col-content fl-node-content">
+                                    <div class="fl-module fl-module-rich-text fl-node-5bfc691cc8c38" data-node="5bfc691cc8c38">
+                                        <div class="fl-module-content fl-node-content">
+                                            <div class="fl-rich-text">
+                                                <p style="text-align: center;"><span style="font-size: 13px; color: #868686;">© 2018 Stefanos Trattoria. All Rights Reserved. Powered by <a style="color: #868686;" href="https://datadrivenlabs.io">Data Driven Labs</a></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="uabb-js-breakpoint" style="display: none;"></div>
+    </div>
+    <!-- .fl-page -->
+    <script src='https://stefanos-trattoria.com/wp-content/plugins/bb-plugin/js/jquery.waypoints.min.js?ver=2.5.0.1' id='jquery-waypoints-js'></script>
+    <script src='https://stefanos-trattoria.com/wp-content/plugins/bb-plugin/js/jquery.magnificpopup.min.js?ver=2.5.0.1' id='jquery-magnificpopup-js'></script>
+    <script src='https://stefanos-trattoria.com/wp-includes/js/masonry.min.js?ver=4.2.2' id='masonry-js'></script>
+    <script src='https://stefanos-trattoria.com/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b' id='jquery-masonry-js'></script>
+    <script src='https://stefanos-trattoria.com/wp-content/plugins/bb-ultimate-addon/assets/js/global-scripts/jquery-masonary.js?ver=5.8.1' id='isotope-js'></script>
+    <script src='https://stefanos-trattoria.com/wp-content/plugins/bb-ultimate-addon/assets/js/global-scripts/imagesloaded.min.js?ver=5.8.1' id='imagesloaded-uabb-js'></script>
+    <script src='https://stefanos-trattoria.com/wp-content/plugins/bb-plugin/js/jquery.fitvids.min.js?ver=1.2' id='jquery-fitvids-js'></script>
+    <script src='https://stefanos-trattoria.com/wp-content/uploads/bb-plugin/cache/2-layout.js?ver=86a6ccb423a8a230521b4e379e925e63' id='fl-builder-layout-2-js'></script>
+    <script src='https://stefanos-trattoria.com/wp-content/uploads/bb-plugin/cache/944b316b906ba07023f40f7ffb3621d1-layout-bundle.js?ver=2.5.0.1-1.3.3.1' id='fl-builder-layout-bundle-944b316b906ba07023f40f7ffb3621d1-js'></script>
+    <script src='https://stefanos-trattoria.com/wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.min.js?ver=2.5.0.1' id='jquery-throttle-js'></script>
+    <script src='https://stefanos-trattoria.com/wp-content/themes/bb-theme/js/bootstrap-4.min.js?ver=1.7.9' id='bootstrap-4-js'></script>
+    <script id='fl-automator-js-extra'>
+        var themeopts = {
+            "medium_breakpoint": "992",
+            "mobile_breakpoint": "768"
+        };
+    </script>
+    <script src='https://stefanos-trattoria.com/wp-content/themes/bb-theme/js/theme.min.js?ver=1.7.9' id='fl-automator-js'></script>
+    <script src='https://stefanos-trattoria.com/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
+    <script>
+        gform.initializeOnLoaded(function() {
+            jQuery(document).on('gform_post_render', function(event, formId, currentPage) {
+                if (formId == 1) {
+                    if (typeof Placeholders != 'undefined') {
+                        Placeholders.enable();
+                    }
+                }
+            });
+            jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit) {})
+        });
+    </script>
+    <script>
+        gform.initializeOnLoaded(function() {
+            jQuery(document).trigger('gform_post_render', [1, 1])
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/Draggable.min.js" integrity="sha512-i3gZH5PXWe3Ab68C4n2ZG1lWLVbUGQHZVOH6VBzAikny0prv5fJKfxVSeBCw3J3lN7c9gUE9T97tlFOxwJtrqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js" integrity="sha512-eI+25yMAnyrpomQoYCqvHBmY4dLfqKWPnD4j8y0E3Js+yqpF26xncL4t81M1zxC+ISYfRoCN52rN/n0q2UIBZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <srcipt src="gsap.js"></srcipt>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+gsap.to(".fl-heading-text", { color: "red", repeat: -1 });
