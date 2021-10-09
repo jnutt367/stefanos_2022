@@ -1,1 +1,1 @@
-gsap.to(".fl-heading-text", { color: "red", repeat: -1 });
+gsap.to(".fl-heading-text", { color: "black", repeat: 10, scale: 1.1, fontSize: "50" });
